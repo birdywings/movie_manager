@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    {{ super() }}
+    <h1>删除</h1>
+    <li><a href="{{ url_for('delete.delete_movie') }}">影片</a></li>
+    <li><a href="{{ url_for('delete.delete_type') }}">类型</a></li>
+    <li><a href="{{ url_for('delete.delete_actor') }}">演员</a></li>
+    <li><a href="{{ url_for('delete.delete_director') }}">导演</a></li>
+
+{% endblock %}

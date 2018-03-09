@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    {{ super() }}
+    <h1>增加</h1>
+    <li><a href="{{ url_for('add.add_movie') }}">影片</a></li>
+    <li><a href="{{ url_for('add.add_type') }}">类型</a></li>
+    <li><a href="{{ url_for('add.add_actor') }}">演员</a></li>
+    <li><a href="{{ url_for('add.add_director') }}">导演</a></li>
+    <li><a href="{{ url_for('add.add_movie_from_url') }}">根据豆瓣url添加电影</a></li>
+
+{% endblock %}
